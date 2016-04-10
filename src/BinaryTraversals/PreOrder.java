@@ -10,14 +10,14 @@ import java.util.ArrayList;
  */
 public class PreOrder<T> {
 
-    BinaryNode root;
+    private BinaryNode root;
 
     public PreOrder(BinaryNode root) {
         this.root = root;
     }
 
     public void printAll() {
-        printAll(this.root);
+        printAll(this.getRoot());
     }
 
     private void printAll(BinaryNode root) {
@@ -32,7 +32,7 @@ public class PreOrder<T> {
     }
 
     public boolean find(T key) {
-        return find(this.root, key);
+        return find(this.getRoot(), key);
     }
 
     private boolean find(BinaryNode root, T key) {
@@ -52,6 +52,20 @@ public class PreOrder<T> {
         }
 
         return false;
+    }
+
+    /**
+     * @return the root
+     */
+    public BinaryNode getRoot() {
+        return root;
+    }
+
+    /**
+     * @param root the root to set
+     */
+    public void setRoot(BinaryNode root) {
+        this.root = root;
     }
 
    
