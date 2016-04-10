@@ -32,22 +32,28 @@ public class InOrder<T> {
     }
 
     public boolean find(T key) {
-        return true;
+        return find(this.root, key);
     }
 
-    public boolean find(BinaryNode root, T key) {
+    private boolean find(BinaryNode root, T key) {
         if (root.getData().equals(key)) {
+
             return true;
         }
         if (root.getLeftChild() != null) {
-            find(root.getLeftChild(), key);
+            if (find(root.getLeftChild(), key)) {
+                return true;
+            }
         }
         if (root.getRightChild() != null) {
-            find(root.getRightChild(), key);
+            if (find(root.getRightChild(), key)) {
+                return true;
+            }
         }
 
         return false;
     }
 
-    
+   
+
 }
