@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author David Jennings This class implements a in order traversal of a binary
+ * @author David Jennings This class implements a pre order traversal of a binary
  * tree.
  */
 public class PreOrder<T> {
