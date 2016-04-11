@@ -79,6 +79,27 @@ public class PostOrder <T> {
         this.root = root;
     }
     
-    
+//     BinaryNode<String> node = new BinaryNode("a",null,null,null);
+//    BinaryNode<String> node1 = new BinaryNode("b",node,null,null);
+//    BinaryNode<String> node2 = new BinaryNode("c",node,null,null);
+//    BinaryNode<String> node3 = new BinaryNode("d",node1,null,null);
+//    BinaryNode<String> node4 = new BinaryNode("e",node2,null,null);
+//    BinaryNode<String> node5 = new BinaryNode("f",node2,null,null);
+//    BinaryNode<String> node6 = new BinaryNode("g",node4,null,null);
+//    BinaryNode<String> node7 = new BinaryNode("h",node5,null,null);
+//    BinaryNode<String> node8 = new BinaryNode("i",node5,null,null);
+//    
+//    node.setLeftChild(node1);
+//    node.setRightChild(node2);
+//    node1.setLeftChild(node3);
+//    node2.setLeftChild(node4);
+//    node2.setRightChild(node5);
+//    node4.setRightChild(node6);
+//    node5.setLeftChild(node7);
+//    node5.setRightChild(node8);
+//    
+//    PostOrder<String> od = new PostOrder(node);
+//    od.printAll();
+//    System.out.println(od.find("i"));
     
 }
