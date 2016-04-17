@@ -3,6 +3,7 @@ package Stack;
 /**
  *
  * @author David Jennings
+ * This class implements a stack using LinkedList.
  */
 public class ListStack<T> {
 
